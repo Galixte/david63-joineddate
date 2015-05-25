@@ -39,13 +39,9 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'dateformats'	=> array_merge($lang['dateformats'], array(
-		'M Y'		=> 'ين 2008',
 		'F Y'		=> 'يناير 2008',
-		'd M Y'		=> '1 ين 2008',
 		'd F Y'		=> '1 يناير 2008',
-		'|M Y|'		=> 'اليوم / ين 2008',
 		'|F Y|'		=> 'اليوم / يناير 2008',
-		'|d M Y|'	=> 'اليوم / 1 ين 2008',
 		'|d F Y|'	=> 'اليوم / 1 يناير 2008',
 	)),
 ));
