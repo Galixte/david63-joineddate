@@ -42,17 +42,17 @@ $lang = array_merge($lang, array(
 	'CUSTOM_DATEFORMAT'				=> 'Personnalisé…',
 
 	'JOINED_DATE_FORMAT'			=> 'Format de la date d’inscription',
-	'JOINED_DATE_FORMAT_EXPLAIN'	=> 'Sur cette page il est possible de paramétrer le format de la date de l’information : « Enregistré le » qui sera affiché dans les sujets, la liste des membres et les profils.',
+	'JOINED_DATE_FORMAT_EXPLAIN'	=> 'Sur cette page il est possible de paramétrer le format de la date d’inscription, indiquée par l’information : « Enregistré le », qui sera affichée dans les sujets, la liste des membres et les profils.',
 	'JOINED_DATE_LOG'				=> '<strong>Le format de date d’inscription a été mis à jour.</strong>',
 
 	'MEMBERLIST_FORMAT'				=> 'Format de date d’inscription pour la liste des membres',
-	'MEMBERLIST_FORMAT_EXPLAIN'		=> 'Permet de paramétrer le format de la date de l’information : « Enregistré le » qui sera affiché dans la liste des membres.<br />Laisser vide pour utiliser le format de la date par défaut de l’utilisateur.',
+	'MEMBERLIST_FORMAT_EXPLAIN'		=> 'Permet de paramétrer le format de la date d’inscription, indiquée par l’information : « Enregistré le », qui sera affichée dans la liste des membres.<br />Laisser vide pour utiliser le format de la date par défaut de l’utilisateur.',
 
 	'PROFILE_FORMAT'				=> 'Format de date d’inscription pour les profils',
-	'PROFILE_FORMAT_EXPLAIN'		=> 'Permet de paramétrer le format de la date de l’information : « Enregistré le » qui sera affiché dans les profils.<br />Laisser vide pour utiliser le format de la date par défaut de l’utilisateur.',
+	'PROFILE_FORMAT_EXPLAIN'		=> 'Permet de paramétrer le format de la date d’inscription, indiquée par l’information : « Enregistré le », qui sera affichée dans les profils.<br />Laisser vide pour utiliser le format de la date par défaut de l’utilisateur.',
 
 	'VIEWTOPIC_FORMAT'				=> 'Format de date d’inscription pour les sujets',
-	'VIEWTOPIC_FORMAT_EXPLAIN'		=> 'Permet de paramétrer le format de la date de l’information : « Enregistré le » qui sera affiché dans les sujets.<br />Laisser vide pour utiliser le format de la date par défaut de l’utilisateur.',
+	'VIEWTOPIC_FORMAT_EXPLAIN'		=> 'Permet de paramétrer le format de la date d’inscription, indiquée par l’information : « Enregistré le », qui sera affichée dans les sujets.<br />Laisser vide pour utiliser le format de la date par défaut de l’utilisateur.',
 
 	'dateformats'	=> array_merge($lang['dateformats'], array(
 		'F Y'		=> 'janvier 2008',
