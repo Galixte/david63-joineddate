@@ -3,7 +3,7 @@
 	"type": "phpbb-extension",
 	"description": "An extension to change the joined date format displayed in viewtopic and memberlist/user profile.",
 	"homepage": "",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"time": "2015-05-24",
 	"keywords": [
 		"phpbb",
