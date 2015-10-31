@@ -40,19 +40,19 @@ class admin_controller implements admin_interface
 	* @param \phpbb\config\config		$config		Config object
 	* @param \phpbb\request\request		$request	Request object
 	* @param \phpbb\template\template	$template	Template object
-	* @param \phpbb\user				$this->user	User object
+	* @param \phpbb\user				$user		User object
 	* @param ContainerInterface			$container	Service container interface
 	*
 	* @return \phpbb\logsearches\controller\admin_controller
 	* @access public
 	*/
-	public function __construct(\phpbb\config\config $config, \phpbb\request\request $request, \phpbb\template\template $template, \phpbb\user $user, ContainerInterface $container)
+	public function __construct(\phpbb\config\config $config, \phpbb\request\request $request, \phpbb\template\template $template, \phpbb\user $user, \phpbb\log\log $log)
 	{
-		$this->config		= $config;
-		$this->request		= $request;
-		$this->template		= $template;
-		$this->user			= $user;
-		$this->container	= $container;
+		$this->config	= $config;
+		$this->request	= $request;
+		$this->template	= $template;
+		$this->user		= $user;
+		$this->log		= $log;
 	}
 
 	/**
@@ -81,8 +81,7 @@ class admin_controller implements admin_interface
 			$this->set_options();
 
 			// Add option settings change action to the admin log
-			$phpbb_log = $this->container->get('log');
-			$phpbb_log->add('admin', $this->user->data['user_id'], $this->user->ip, 'JOINED_DATE_LOG');
+			$this->log->add('admin', $this->user->data['user_id'], $this->user->ip, 'JOINED_DATE_LOG');
 
 			// Option settings have been updated and logged
 			// Confirm this to the user and provide link back to previous page
