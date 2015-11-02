@@ -11,6 +11,8 @@ namespace david63\joineddate\controller;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
+use david63\joineddate\ext;
+
 /**
 * Admin controller
 */
@@ -89,9 +91,10 @@ class admin_controller implements admin_interface
 		}
 
 		$this->template->assign_vars(array(
-			'FORMAT_MEMBERLIST'	=> $this->get_dateformat_select($this->config['joined_dateformat_memberlist'], 'joined_dateformat_memberlist'),
-			'FORMAT_PROFILE'	=> $this->get_dateformat_select($this->config['joined_dateformat_profile'], 'joined_dateformat_profile'),
-			'FORMAT_VIEWTOPIC'	=> $this->get_dateformat_select($this->config['joined_dateformat_viewtopic'], 'joined_dateformat_viewtopic'),
+			'FORMAT_MEMBERLIST'		=> $this->get_dateformat_select($this->config['joined_dateformat_memberlist'], 'joined_dateformat_memberlist'),
+			'FORMAT_PROFILE'		=> $this->get_dateformat_select($this->config['joined_dateformat_profile'], 'joined_dateformat_profile'),
+			'FORMAT_VIEWTOPIC'		=> $this->get_dateformat_select($this->config['joined_dateformat_viewtopic'], 'joined_dateformat_viewtopic'),
+			'JOINED_DATE_VERSION'	=> ext::JOINED_DATE_FORMAT_VERSION,
 
 			'U_ACTION'			=> $this->u_action,
 		));
