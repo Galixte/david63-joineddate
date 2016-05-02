@@ -1,0 +1,42 @@
+{% include 'overall_header.html' %}
+{% INCLUDECSS '@david63_joineddate/version.css' %}
+
+<h1>{{ lang('JOINED_DATE_FORMAT') }}</h1>
+<p>{{ lang('JOINED_DATE_FORMAT_EXPLAIN') }}</p>
+
+<form id="logsearches" method="post" action="{U_ACTION}">
+	<fieldset>
+		<legend>{{ lang('JOINED_DATE_OPTIONS') }}</legend>
+
+		<dl>
+			<dt><label for="version">{{ lang('VERSION') }}{{ lang('COLON') }}</label><span class="version">{JOINED_DATE_VERSION}</span></dt>
+		</dl>
+
+		<dl>
+			<dt><label for="joined_dateformat_viewtopic">{{ lang('VIEWTOPIC_FORMAT') }}{{ lang('COLON') }}</label><br /><span>{{ lang('VIEWTOPIC_FORMAT_EXPLAIN') }}</span></dt>
+			<dd><label>{FORMAT_VIEWTOPIC}</label></dd>
+		</dl>
+
+		<dl>
+			<dt><label for="joined_dateformat_memberlist">{{ lang('MEMBERLIST_FORMAT') }}{{ lang('COLON') }}</label><br /><span>{{ lang('MEMBERLIST_FORMAT_EXPLAIN') }}</span></dt>
+			<dd><label>{FORMAT_MEMBERLIST}</label></dd>
+		</dl>
+
+		<dl>
+			<dt><label for="joined_dateformat_profile">{{ lang('PROFILE_FORMAT') }}{{ lang('COLON') }}</label><br /><span>{{ lang('PROFILE_FORMAT_EXPLAIN') }}</span></dt>
+			<dd><label>{FORMAT_PROFILE}</label></dd>
+		</dl>
+
+	</fieldset>
+
+	<fieldset>
+		<legend>{{ lang('ACP_SUBMIT_CHANGES') }}</legend>
+		<p class="submit-buttons">
+			<input class="button1" type="submit" id="submit" name="submit" value="{{ lang('SUBMIT') }}" />&nbsp;
+			<input class="button2" type="reset" id="reset" name="reset" value="{{ lang('RESET') }}" />
+		</p>
+		{S_FORM_TOKEN}
+	</fieldset>
+</form>
+
+{% include 'overall_footer.html' %}
