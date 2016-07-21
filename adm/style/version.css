@@ -1,12 +1,18 @@
 .version {
-	background: #3498db;
-  	-webkit-border-radius: 28;
-  	-moz-border-radius: 28;
-  	border-radius: 28px;
-  	font-family: Arial;
+  	border-radius: 15px;
+	font-size: 1.00em;
   	color: #000000;
-  	font-size: 10px;
-  	background: #3eed0e;
-  	padding: 3px 10px 3px 10px;
-  	text-decoration: none;
+	font-weight: bold;
+  	background: #3EED0E;
+	text-align: center;
+	display: inline-block;
+	width: 50px;
+}
+
+.version_name{
+	font-size: 1.00em;
+	text-align: left;
+	font-weight: bold;
+	color: #4A5A73;
+	margin: 10px
 }

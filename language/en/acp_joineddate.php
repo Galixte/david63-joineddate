@@ -47,6 +47,7 @@ $lang = array_merge($lang, array(
 	'PROFILE_FORMAT'				=> 'Joined date format for profile',
 	'PROFILE_FORMAT_EXPLAIN'		=> 'Set the date format for the “joined” date on a member’s profile.<br />Leave blank to use the user default date format.',
 
+	'VERSION'						=> 'Version',
 	'VIEWTOPIC_FORMAT'				=> 'Joined date format for Viewtopic',
 	'VIEWTOPIC_FORMAT_EXPLAIN'		=> 'Set the date format for the “joined” date on Viewtopic.<br />Leave blank to use the user default date format.',
 

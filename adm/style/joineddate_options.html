@@ -5,12 +5,10 @@
 <p>{{ lang('JOINED_DATE_FORMAT_EXPLAIN') }}</p>
 
 <form id="logsearches" method="post" action="{U_ACTION}">
+	<span class="version_name">{{ lang('VERSION') }}{{ lang('COLON') }}</span><span class="version">{JOINED_DATE_VERSION}</span>
+
 	<fieldset>
 		<legend>{{ lang('JOINED_DATE_OPTIONS') }}</legend>
-
-		<dl>
-			<dt><label for="version">{{ lang('VERSION') }}{{ lang('COLON') }}</label><span class="version">{JOINED_DATE_VERSION}</span></dt>
-		</dl>
 
 		<dl>
 			<dt><label for="joined_dateformat_viewtopic">{{ lang('VIEWTOPIC_FORMAT') }}{{ lang('COLON') }}</label><br /><span>{{ lang('VIEWTOPIC_FORMAT_EXPLAIN') }}</span></dt>
