@@ -85,7 +85,8 @@ class listener implements EventSubscriberInterface
 		// Are we changing profile or memberlist?
 		if (strlen($template_data['U_NOTES']) > 0)
 		{
-			$template_data['JOINED'] = $this->user->format_date($data['user_regdate'], $this->config['joined_dateformat_profile']);
+			$template_data['JOINED'] 		= $this->user->format_date($data['user_regdate'], $this->config['joined_dateformat_profile']);
+			$template_data['LAST_ACTIVE']	= ($data['user_lastvisit']) ? $this->user->format_date($data['user_lastvisit'], $this->config['joined_dateformat_profile']) : '-';
 		}
 		else
 		{
