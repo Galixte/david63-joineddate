@@ -1,12 +1,11 @@
 {% include 'overall_header.html' %}
-{% INCLUDECSS '@david63_joineddate/version.css' %}
 
 <h1>{{ lang('JOINED_DATE_FORMAT') }}</h1>
 <p>{{ lang('JOINED_DATE_FORMAT_EXPLAIN') }}</p>
 
-<form id="logsearches" method="post" action="{U_ACTION}">
-	<span class="version_name">{{ lang('VERSION') }}{{ lang('COLON') }}</span><span class="version">{JOINED_DATE_VERSION}</span>
+<img style="float: {S_CONTENT_FLOW_END};" src="https://img.shields.io/badge/{{ lang('VERSION') }}-{JOINED_DATE_VERSION}-orange.svg?style=plastic" /><br />
 
+<form id="logsearches" method="post" action="{U_ACTION}">
 	<fieldset>
 		<legend>{{ lang('JOINED_DATE_OPTIONS') }}</legend>
 
