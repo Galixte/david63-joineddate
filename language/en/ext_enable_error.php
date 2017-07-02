@@ -2,7 +2,7 @@
 /**
 *
 * @package Joined Date Format Extension
-* @copyright (c) 2015 david63
+* @copyright (c) 2016 david63
 * @license GNU General Public License, version 2 (GPL-2.0)
 *
 */
@@ -20,7 +20,7 @@ if (empty($lang) || !is_array($lang))
 	$lang = array();
 }
 
-// DEVELOPERS PLEASE NOTE
+/// DEVELOPERS PLEASE NOTE
 //
 // All language files should use UTF-8 as their encoding and the files must not contain a BOM.
 //
@@ -36,6 +36,16 @@ if (empty($lang) || !is_array($lang))
 // ’ » “ ” …
 //
 
+$lang = array_merge($lang, [
+	'EXT_ENABLE_ERROR' => 'This extension requires phpBB 3.2.0 (or greater).',
+]);
+
+/**
+* Translators ignore this.
+*
+* Overwrite core error message keys with a more specific message.
+*/
 $lang = array_merge($lang, array(
-	'VERSION_32' => 'This extension requires phpBB 3.2.x (or greater)',
+	'EXTENSION_NOT_ENABLEABLE' 		=> isset($lang['EXTENSION_NOT_ENABLEABLE']) ? $lang['EXTENSION_NOT_ENABLEABLE'] . '<br /><br /><strong>' . $lang['EXT_ENABLE_ERROR'] . '</strong>' : null,
+	'CLI_EXTENSION_ENABLE_FAILURE' 	=> isset($lang['CLI_EXTENSION_ENABLE_FAILURE']) ? $lang['CLI_EXTENSION_ENABLE_FAILURE'] . ' : ' . $lang['EXT_ENABLE_ERROR'] : null,
 ));

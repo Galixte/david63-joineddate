@@ -10,7 +10,7 @@
 namespace david63\joineddate\controller;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use david63\joineddate\ext;
+use \david63\joineddate\ext;
 
 /**
 * Admin controller
@@ -32,7 +32,7 @@ class admin_controller implements admin_interface
 	/** @var ContainerInterface */
 	protected $container;
 
-	/** @var phpbb\language\language */
+	/** @var \phpbb\language\language */
 	protected $language;
 
 	/** @var string Custom form action */
@@ -154,6 +154,6 @@ class admin_controller implements admin_interface
 		$dateformat_options .= '>' . $this->language->lang('CUSTOM_DATEFORMAT') . '</option>';
 
 		return "<select name=\"dateoptions\" id=\"dateoptions\" onchange=\"if (this.value == 'custom') { document.getElementById('" . addslashes($key) . "').value = '" . addslashes($value) . "'; } else { document.getElementById('" . addslashes($key) . "').value = this.value; }\">$dateformat_options</select><br />
-		<input type=\"text\" name=\"$key\" id=\"$key\" value=\"$value\" maxlength=\"30\" />";
+		<input class=\"textbox\" type=\"text\" name=\"$key\" id=\"$key\" value=\"$value\" maxlength=\"30\" />";
 	}
 }
