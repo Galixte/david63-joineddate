@@ -86,7 +86,7 @@ input[type=radio] {
 
 input[type=radio] + label {
     display: inline-block;
-    margin: -2px;
+    margin: -1px;
     padding: 1px 10px;
     margin-bottom: 0;
     font-family: Arial;
@@ -182,4 +182,24 @@ Label
 --------- */
 dd label{
 	margin-left:10px;
+}
+
+
+/* ---------
+Pagination
+--------- */
+.pagination li a, .pagnation li span, li .pagination li a, li .pagnation li span, .pagination li.active span, .pagination li.ellipsis span {
+	box-shadow: 3px 4px 0px 0px #899599;
+	background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color: #ededed;
+	border-radius: 5px;
+	border: 1px solid #d6bcd6;
+	color: #1D444E;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.pagination li.active span {
+	color: #FFFFFF;
+	background: linear-gradient(to bottom, #99CC00 5%, #336600 100%);
 }
